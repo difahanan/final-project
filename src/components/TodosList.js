@@ -38,22 +38,17 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
           />
 
           <div>
-            {/* ini ketika tugas selesai dilaksanakan */}
             <button className='button-compelete task-button' onClick={() => handleCompelete(todo)}>
               <i className='fa fa-check-circle'></i>
             </button>
-
-            {/* ini untuk dedit */}
             <button className='button-edit task-button' onClick={() => handleEdit(todo)}>
               <i className='fa fa-edit'></i>
             </button>
-
-            {/* ini button untuk hapus */}
             <button className='button-delete task-button' onClick={() => handleDelete(todo)}>
               <i className='fa fa-trash'></i>
             </button>
-
           </div>
+
         </li>
       ))}
     </div>

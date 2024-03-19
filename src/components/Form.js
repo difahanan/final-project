@@ -41,13 +41,11 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
     <form onSubmit={onFormSubmit}>
         <input
         type="text"
-        placeholder='Enter a Todo...'
+        placeholder='Meeting'
         className='task-input'
         value={input}
         onChange={onInputChange}
         />
-
-
         {/* ini untuk membedakan mana tombol edit dan mana tombol add */}
         <button className='button-add' type="submit">
             {editTodo ? "OK" : "Add"}   
